@@ -22,7 +22,7 @@ const run = function(){
 	let exec = require('child_process').exec;
 	let cmd = `php ${__dirname}/updater.php ${token} ${host} ${subdomain} A`
 	let child1 = exec(cmd, writeLog);
-	setTimeout(run, 30000);
+	setTimeout(run, 300000);
 }
 
 // Start run
